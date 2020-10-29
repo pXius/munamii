@@ -1,0 +1,54 @@
+@import './palette.css';
+
+.homepage-grid {
+  display: grid;
+  grid-template-columns: 60% 36%;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-areas: 'one two';
+}
+
+.homepage-body {
+  margin-top: 8px;
+  z-index: -2;
+  /* height: 90vh; */
+  background-image: url('../img/cupcake-wood.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 0px 10px rgb(84, 84, 84));
+  -webkit-filter: drop-shadow(0px 0px 10px rgb(84, 84, 84));
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.home-page-card {
+  margin-top: 12%;
+  margin-bottom: 12%;
+  grid-area: two;
+  background-color: hsla(358, 100%, 86%, 0.75);
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 22pt;
+  text-justify: inter-word;
+  padding: 10px 30px 10px 40px;
+  border: 2px dashed white;
+  border-radius: 25px;
+  color: white;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 40px;
+}
+
+.welcome {
+  font-family: 'Sacramento';
+  font-weight: 100;
+  font-size: 32pt;
+  padding: 0;
+  margin: 0;
+}

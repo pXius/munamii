@@ -1,0 +1,45 @@
+@import './shared.css';
+
+.footer {
+  background-color: var(--powder-blue);
+  box-shadow: 0 -9px 6px -7px rgb(87, 87, 87);
+  margin-top: 8px;
+}
+
+.footer-shadow {
+  position: relative;
+  border-radius: 20px 20px;
+  -webkit-border-radius: 20px 20px;
+  -moz-border-radius: 20px 20px;
+  -ms-border-radius: 20px 20px;
+  -o-border-radius: 20px 20px;
+}
+.footer-shadow::before,
+.footer-shadow::after {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  bottom: 60%;
+  left: 10px;
+  width: 50%;
+  top: 20px;
+  max-width: 400px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px rgb(87, 87, 87);
+  -moz-box-shadow: 0 15px 10px rgb(87, 87, 87);
+  box-shadow: 0 -16px 10px rgb(120, 120, 120);
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+.footer-shadow:after {
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  right: 10px;
+  left: auto;
+}

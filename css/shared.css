@@ -1,0 +1,36 @@
+@import './palette.css';
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+body {
+  background-color: var(--tea-green);
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.grid {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 5vw auto 5vw;
+  grid-template-rows: 200px auto 100px;
+  grid-template-areas:
+    'nav nav nav'
+    'left-side body right-side'
+    'foot foot foot';
+}
+
+.nav-bar {
+  grid-area: nav;
+}
+
+.homepage-body {
+  grid-area: body;
+}
+
+.footer {
+  grid-area: foot;
+}
