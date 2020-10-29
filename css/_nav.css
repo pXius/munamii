@@ -31,10 +31,20 @@ img {
   -ms-border-radius: 0px 0px 20px 20px;
   -o-border-radius: 0px 0px 20px 20px;
 }
+.link-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 50%;
+}
 
 .nav-link {
+  flex-shrink: 0;
   height: 55px;
   margin-bottom: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-bottom: 2px solid white;
 }
 
@@ -69,4 +79,20 @@ img {
   transform: rotate(3deg);
   right: 10px;
   left: auto;
+}
+
+@media screen and (max-width: 915px) {
+  .link-wrap {
+    justify-content: center;
+    width: 50%;
+  }
+  .nav-bar {
+    padding-bottom: 6%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-link {
+    display: none;
+  }
 }
