@@ -14,3 +14,7 @@ app.get('/', (request, response) => {
 app.get('/about', (request, response) => {
   response.render('about');
 });
+
+app.get('/products', (request, response) => {
+  response.render('products');
+});
