@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/'));
 
 port = process.env.PORT || 80;
-app.listen(3000);
+app.listen(port);
 
 app.get('/', (request, response) => {
   response.render('index');
