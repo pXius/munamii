@@ -23,7 +23,7 @@
 }
 
 .home-body {
-  background-image: url('../img/cupcake-wood.jpg');
+  background-image: url('../img/backgrounds/cupcake-wood.jpg');
 }
 
 .single-page-card {
@@ -62,7 +62,7 @@
   }
 
   .single-page-body {
-    background-image: url('../img/cupcake4.jpg');
+    background-image: url('../img/backgrounds/cupcake4.jpg');
     background-size: cover;
   }
 

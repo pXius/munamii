@@ -3,7 +3,8 @@
 .footer {
   background-color: var(--powder-blue);
   box-shadow: 0 -9px 6px -7px rgb(87, 87, 87);
-  margin-top: 8px;
+  margin-top: 12px;
+  border-top: 2px dashed white;
 }
 
 .footer-shadow {

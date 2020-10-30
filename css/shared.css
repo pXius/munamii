@@ -11,9 +11,9 @@ body {
   height: 100%;
 }
 
-/* body {
-  background-color: var(--tea-green);
-} */
+body {
+  background-color: var(--champagne-pink);
+}
 
 .grid {
   /* position: absolute; */
@@ -33,6 +33,10 @@ body {
 }
 
 .single-page-body {
+  grid-area: body;
+}
+
+.products-body {
   grid-area: body;
 }
 

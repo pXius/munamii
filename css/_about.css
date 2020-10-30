@@ -1,11 +1,11 @@
 @import './shared.css';
 
 .about-body {
-  background-image: url('../img/cupcake-platter.jpg');
+  background-image: url('../img/backgrounds/cupcake-platter.jpg');
 }
 
 @media screen and (max-width: 1000px) {
   .about-body {
-    background-image: url('../img/cupcake3.jpeg');
+    background-image: url('../img/backgrounds/cupcake3.jpeg');
   }
 }
