@@ -5,12 +5,40 @@
   box-shadow: 0 -9px 6px -7px rgb(87, 87, 87);
   margin-top: 12px;
   border-top: 2px dashed white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-content {
-  width: 100%;
+.social-media {
+  width: 10vw;
+  font-size: 32pt;
   display: flex;
-  align-content: space-around;
+  justify-content: space-around;
+  margin-right: 6vw;
+}
+
+.sm {
+  flex: 0;
+  flex-shrink: 0;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.footer-mail {
+  margin-left: 6vw;
+  width: 11vw;
+  font-size: 32pt;
+}
+
+.footer-text {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 16pt;
+  font-weight: 400;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  text-align: center;
 }
 
 .footer-shadow {

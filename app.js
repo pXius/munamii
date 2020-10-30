@@ -18,3 +18,7 @@ app.get('/about', (request, response) => {
 app.get('/products', (request, response) => {
   response.render('products');
 });
+
+app.get('/contact', (request, response) => {
+  response.render('contact');
+});
