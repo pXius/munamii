@@ -1,0 +1,173 @@
+@import './shared.css';
+
+.products-grid {
+  display: grid;
+  justify-items: center;
+  gap: 5vw;
+  grid-template-areas: 'mid mid';
+}
+
+.products-body {
+  z-index: -2;
+  margin-top: 5vw;
+}
+
+.item-text {
+  background-color: var(--powder-blue);
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 15px 15px 20px 20px;
+  -webkit-border-radius: 15px 15px 20px 20px;
+  -moz-border-radius: 15px 15px 20px 20px;
+  -ms-border-radius: 15px 15px 20px 20px;
+  -o-border-radius: 15px 15px 20px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px dashed white;
+  border-bottom: 2px dashed white;
+  box-shadow: 0 -9px 6px -8px rgb(87, 87, 87);
+}
+
+.item-all {
+  height: 500px;
+  width: 500px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  justify-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 1700px) {
+  .item-all {
+    height: 700px;
+    width: 700px;
+  }
+}
+
+.item1 {
+  background-image: url('../img/Products/CC1.jpeg');
+}
+.item2 {
+  background-image: url('../img/Products/CC2.jpg');
+}
+.item3 {
+  background-image: url('../img/Products/CC3.jpg');
+}
+.item4 {
+  background-image: url('../img/Products/CC4.jpg');
+}
+.item5 {
+  background-image: url('../img/Products/CC5.jpg');
+}
+.item6 {
+  background-image: url('../img/Products/CC6.jpg');
+}
+.item7 {
+  background-image: url('../img/Products/CC7.jpg');
+}
+.item8 {
+  background-image: url('../img/Products/CC8.jpg');
+}
+
+.item9 {
+  background-image: url('../img/Products/cake1.jpg');
+}
+
+.item10 {
+  background-image: url('../img/Products/cake2.jpg');
+}
+
+.item11 {
+  background-image: url('../img/Products/cake3.jpg');
+}
+
+.item12 {
+  background-image: url('../img/Products/cake4.jpg');
+}
+
+.item13 {
+  background-image: url('../img/Products/cake5.jpg');
+}
+
+.item14 {
+  background-image: url('../img/Products/cake6.jpg');
+}
+
+.item15 {
+  background-image: url('../img/Products/cake7.jpg');
+  margin-bottom: 40px;
+}
+
+.item16 {
+  background-image: url('../img/Products/cake8.jpg');
+  margin-bottom: 20px;
+}
+
+/*  */
+/* Item Square Shadows */
+/*  */
+.item-all {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.item-all:before,
+.item-all:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.item-all:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .products-grid {
+    display: grid;
+    justify-items: center;
+    gap: 5vw;
+    grid-template-areas: 'mid';
+  }
+
+  .item15 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .item-all {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .item-all {
+    height: 250px;
+    width: 250px;
+  }
+}

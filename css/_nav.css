@@ -173,3 +173,10 @@ a:active {
     width: 100vw;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .nav-bar .fas {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
