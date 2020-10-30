@@ -9,17 +9,17 @@ port = process.env.PORT || 80;
 app.listen(port);
 
 app.get('/', (request, response) => {
-  response.render('index');
+  response.render('index', { title: 'Home' });
 });
 
 app.get('/about', (request, response) => {
-  response.render('about');
+  response.render('about', { title: 'About' });
 });
 
 app.get('/products', (request, response) => {
-  response.render('products');
+  response.render('products', { title: 'Cakes' });
 });
 
 app.get('/contact', (request, response) => {
-  response.render('contact');
+  response.render('contact', { title: 'Contact Us' });
 });

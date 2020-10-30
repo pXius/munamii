@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-around;
   margin-right: 6vw;
+  margin-left: 6vw;
 }
 
 .sm {
@@ -25,19 +26,13 @@
   margin-left: 2vw;
 }
 
-.footer-mail {
-  margin-left: 6vw;
-  width: 11vw;
-  font-size: 32pt;
-}
-
 .footer-text {
   color: white;
   font-family: 'Poiret One', cursive;
   font-size: 16pt;
   font-weight: 400;
-  margin-left: 4vw;
-  margin-right: 4vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
   text-align: center;
 }
 
