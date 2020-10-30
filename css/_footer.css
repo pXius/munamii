@@ -7,6 +7,12 @@
   border-top: 2px dashed white;
 }
 
+.footer-content {
+  width: 100%;
+  display: flex;
+  align-content: space-around;
+}
+
 .footer-shadow {
   position: relative;
   border-radius: 20px 20px 0 0;
