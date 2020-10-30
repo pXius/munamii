@@ -36,6 +36,10 @@ body {
   grid-area: body;
 }
 
+.contact-page-body {
+  grid-area: body;
+}
+
 .products-body {
   grid-area: body;
 }

@@ -1,0 +1,106 @@
+@import './shared.css';
+
+.contact-body {
+  background-image: url('../img/backgrounds/cupcake2.jpeg');
+}
+
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  gap: 20%;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-areas: 'one two';
+}
+
+.contact-page-body {
+  margin-top: 12vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.contact-page-card {
+  margin-left: 4%;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  grid-area: one;
+  background-color: hsla(358, 100%, 86%, 0.8);
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 22pt;
+  text-justify: inter-word;
+  padding: 10px 20px 10px 40px;
+  border: 2px dashed white;
+  border-radius: 25px;
+  color: white;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cl {
+  margin-bottom: 10px;
+}
+
+/* mouse over link */
+.contact-links a:hover {
+  text-decoration: none;
+  color: var(--powder-blue);
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-body {
+    background-image: url('../img/backgrounds/Cupcake5.jpg');
+    grid-template-columns: 96%;
+    grid-template-areas: 'one';
+  }
+
+  .contact-page-card {
+    font-size: 20pt;
+  }
+}
+
+/*==================================================
+ * Shadows!
+ * ===============================================*/
+.contact-body {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.contact-body:before,
+.contact-body:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.contact-body:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
