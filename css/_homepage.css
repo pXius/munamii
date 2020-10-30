@@ -7,7 +7,7 @@
   grid-template-areas: 'one two';
 }
 
-.homepage-body {
+.single-page-body {
   margin-top: 8px;
   z-index: -2;
   background-image: url('../img/cupcake-wood.jpg');
@@ -23,7 +23,7 @@
   -o-border-radius: 20px;
 }
 
-.home-page-card {
+.single-page-card {
   margin-top: 12%;
   margin-bottom: 12%;
   grid-area: two;
@@ -58,8 +58,12 @@
     grid-template-columns: 5% 90%;
   }
 
-  .homepage-body {
+  .single-page-body {
     background-image: url('../img/cupcake4.jpg');
     background-size: cover;
+  }
+
+  .single-page-card {
+    font-size: 20pt;
   }
 }
