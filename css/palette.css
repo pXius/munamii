@@ -4,7 +4,7 @@
 :root {
   --green-yellow-crayola: hsla(54, 91%, 78%, 1);
   --powder-blue: hsla(178, 43%, 84%, 1);
-  --tea-green: hsla(124, 78%, 87%, 1);
+  --tea-green: rgb(189, 230, 192);
   --champagne-pink: hsla(18, 77%, 92%, 1);
   --light-pink: hsla(358, 100%, 86%, 1);
   --black-shadow: rgba(2, 2, 2, 0.098);

@@ -20,14 +20,19 @@
 .products-body {
   z-index: -2;
   margin-top: 5vw;
+  font-family: Sacramento;
+  /* font-family: Poiret One; */
 }
 
 .item-text {
+  color: var(--dark-purple);
   background-color: var(--powder-blue);
   height: 50px;
   width: 100%;
   position: absolute;
   bottom: 0;
+  padding-top: 10px;
+  font-size: 24pt;
   border-radius: 15px 15px 20px 20px;
   -webkit-border-radius: 15px 15px 20px 20px;
   -moz-border-radius: 15px 15px 20px 20px;
@@ -56,6 +61,13 @@
 }
 
 .product-spacer {
+  padding-top: 10px;
+  color: white;
+  text-shadow: 0 0 1px #777;
+  font-size: 36pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100px;
   width: 500px;
   background-color: var(--tea-green);
@@ -253,7 +265,15 @@
       '.'
       '.'
       '.'
+      '.'
+      '.'
+      '.'
+      '.'
       'cake'
+      '.'
+      '.'
+      '.'
+      '.'
       '.'
       '.'
       '.'
@@ -263,12 +283,26 @@
   .item15 {
     margin-bottom: 0;
   }
+
+  .grid-cupcake-spacer {
+    margin-top: 5vw;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .item-all {
     height: 300px;
     width: 300px;
+  }
+
+  .item-text {
+    font-size: 18pt;
+  }
+
+  .product-spacer {
+    height: 70px;
+    width: 340px;
+    font-size: 30pt;
   }
 }
 
@@ -278,7 +312,11 @@
     width: 250px;
   }
   .product-spacer {
-    height: 50px;
+    height: 70px;
     width: 280px;
+  }
+
+  .item-text {
+    font-size: 16pt;
   }
 }
