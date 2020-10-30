@@ -15,9 +15,9 @@ img {
 
 .nav-bar {
   padding-top: 90px;
+  /* padding-bottom: 30px; */
   background-color: var(--powder-blue);
   box-shadow: 0 8px 6px -9px rgb(84, 84, 84);
-  color: white;
   font-family: 'Poiret One', cursive;
   font-size: 32pt;
   font-weight: 400;
@@ -31,11 +31,21 @@ img {
   -ms-border-radius: 0px 0px 20px 20px;
   -o-border-radius: 0px 0px 20px 20px;
 }
-.link-wrap {
+.link-wrap1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  text-align: center;
+  width: 50%;
+}
+
+.link-wrap2 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
   width: 50%;
 }
 
@@ -43,8 +53,8 @@ img {
   flex-shrink: 0;
   height: 55px;
   margin-bottom: 16px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-bottom: 2px solid white;
 }
 
@@ -85,8 +95,37 @@ img {
   display: none;
 }
 
+/* unvisited link */
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+  color: var(--light-pink);
+}
+
+/* selected link */
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (max-width: 1000px) {
-  .link-wrap {
+  .link-wrap1 {
+    justify-content: center;
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  .link-wrap2 {
     justify-content: center;
     width: 50%;
     padding-bottom: 50px;
@@ -98,9 +137,12 @@ img {
 }
 
 @media screen and (max-width: 700px) {
-  .link-wrap {
+  .link-wrap1 {
     padding-bottom: 0;
-    text-align: center;
+  }
+
+  .link-wrap2 {
+    padding-bottom: 0;
   }
 
   .nav-link {
@@ -113,12 +155,14 @@ img {
   }
 
   .nav-bar .fas {
-    display: inline;
+    display: block;
     flex-shrink: 0;
-    height: 50px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* height: 50px; */
+    /* margin-bottom: 20px; */
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 22px;
+    margin-right: 22px;
     flex-basis: 90px;
     font-size: 22pt;
   }
