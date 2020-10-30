@@ -81,18 +81,52 @@ img {
   left: auto;
 }
 
-@media screen and (max-width: 915px) {
+.nav-bar .fas {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
   .link-wrap {
     justify-content: center;
     width: 50%;
+    padding-bottom: 50px;
   }
   .nav-bar {
     padding-bottom: 6%;
+    padding-top: 16%;
   }
 }
 
 @media screen and (max-width: 700px) {
+  .link-wrap {
+    padding-bottom: 0;
+    text-align: center;
+  }
+
   .nav-link {
     display: none;
+  }
+
+  .nav-bar img {
+    width: 210px;
+    height: 210px;
+  }
+
+  .nav-bar .fas {
+    display: inline;
+    flex-shrink: 0;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-basis: 90px;
+    font-size: 22pt;
+  }
+
+  .nav-bar {
+    margin-top: 0;
+    padding-top: 16%;
+    padding-bottom: 10%;
+    width: 100vw;
   }
 }

@@ -10,10 +10,10 @@
 .homepage-body {
   margin-top: 8px;
   z-index: -2;
-  /* height: 90vh; */
   background-image: url('../img/cupcake-wood.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
+  /* background-repeat: no-repeat; */
   filter: drop-shadow(0px 0px 10px rgb(84, 84, 84));
   -webkit-filter: drop-shadow(0px 0px 10px rgb(84, 84, 84));
   border-radius: 20px;
@@ -51,4 +51,15 @@
   font-size: 32pt;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .homepage-grid {
+    grid-template-columns: 5% 90%;
+  }
+
+  .homepage-body {
+    background-image: url('../img/cupcake4.jpg');
+    background-size: cover;
+  }
 }
