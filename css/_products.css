@@ -4,7 +4,17 @@
   display: grid;
   justify-items: center;
   gap: 5vw;
-  grid-template-areas: 'mid mid';
+  grid-template-areas:
+    'cupcake cupcake'
+    '. .'
+    '. .'
+    '. .'
+    '. .'
+    'cake cake'
+    '. .'
+    '. .'
+    '. .'
+    '. .';
 }
 
 .products-body {
@@ -45,68 +55,97 @@
   background-position: center;
 }
 
-@media screen and (min-width: 1700px) {
-  .item-all {
-    height: 700px;
-    width: 700px;
-  }
+.product-spacer {
+  height: 100px;
+  width: 500px;
+  background-color: var(--tea-green);
+  border: 2px dashed white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.grid-cupcake-spacer {
+  grid-area: cupcake / cupcake;
+}
+
+.grid-cake-spacer {
+  grid-area: cake / cake;
 }
 
 .item1 {
+  /* grid-area: top; */
   background-image: url('../img/Products/CC1.jpeg');
 }
 .item2 {
+  /* grid-area: top; */
   background-image: url('../img/Products/CC2.jpg');
 }
 .item3 {
+  /* grid-area: top; */
   background-image: url('../img/Products/CC3.jpg');
 }
 .item4 {
+  /* grid-area: top; */
   background-image: url('../img/Products/CC4.jpg');
 }
 .item5 {
+  /* grid-area: top; */
   background-image: url('../img/Products/CC5.jpg');
 }
 .item6 {
+  /* grid-area: top; */
   background-image: url('../img/Products/CC6.jpg');
 }
 .item7 {
+  /* grid-area: top; */
   background-image: url('../img/Products/CC7.jpg');
 }
 .item8 {
+  /* grid-area: top; */
   background-image: url('../img/Products/CC8.jpg');
 }
 
 .item9 {
+  /* grid-area: bot; */
   background-image: url('../img/Products/cake1.jpg');
 }
 
 .item10 {
+  /* grid-area: bot; */
   background-image: url('../img/Products/cake2.jpg');
 }
 
 .item11 {
+  /* grid-area: bot; */
   background-image: url('../img/Products/cake3.jpg');
 }
 
 .item12 {
+  /* grid-area: bot; */
   background-image: url('../img/Products/cake4.jpg');
 }
 
 .item13 {
+  /* grid-area: bot; */
   background-image: url('../img/Products/cake5.jpg');
 }
 
 .item14 {
+  /* grid-area: bot; */
   background-image: url('../img/Products/cake6.jpg');
 }
 
 .item15 {
+  /* grid-area: bot; */
   background-image: url('../img/Products/cake7.jpg');
   margin-bottom: 40px;
 }
 
 .item16 {
+  /* grid-area: bot; */
   background-image: url('../img/Products/cake8.jpg');
   margin-bottom: 20px;
 }
@@ -145,12 +184,80 @@
   transform: skew(8deg) rotate(3deg);
 }
 
+.grid-cupcake-spacer {
+  position: relative;
+}
+.grid-cupcake-spacer:before {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.grid-cake-spacer {
+  position: relative;
+}
+.grid-cake-spacer:after {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+@media screen and (min-width: 1700px) {
+  .item-all {
+    height: 700px;
+    width: 700px;
+  }
+  .product-spacer {
+    height: 120px;
+    width: 700px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .products-grid {
     display: grid;
     justify-items: center;
     gap: 5vw;
-    grid-template-areas: 'mid';
+    grid-template-areas:
+      'cupcake'
+      '.'
+      '.'
+      '.'
+      '.'
+      'cake'
+      '.'
+      '.'
+      '.'
+      '.';
   }
 
   .item15 {
@@ -169,5 +276,9 @@
   .item-all {
     height: 250px;
     width: 250px;
+  }
+  .product-spacer {
+    height: 50px;
+    width: 280px;
   }
 }
