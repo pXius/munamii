@@ -1,6 +1,6 @@
 @import './palette.css';
 
-.homepage-grid {
+.single-page-grid {
   display: grid;
   grid-template-columns: 60% 36%;
   grid-auto-rows: minmax(min-content, max-content);
@@ -10,7 +10,6 @@
 .single-page-body {
   margin-top: 8px;
   z-index: -2;
-  background-image: url('../img/cupcake-wood.jpg');
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
@@ -23,11 +22,15 @@
   -o-border-radius: 20px;
 }
 
+.home-body {
+  background-image: url('../img/cupcake-wood.jpg');
+}
+
 .single-page-card {
   margin-top: 12%;
   margin-bottom: 12%;
   grid-area: two;
-  background-color: hsla(358, 100%, 86%, 0.75);
+  background-color: hsla(358, 100%, 86%, 0.8);
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   font-size: 22pt;
@@ -54,7 +57,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .homepage-grid {
+  .single-page-grid {
     grid-template-columns: 5% 90%;
   }
 
