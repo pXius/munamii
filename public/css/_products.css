@@ -87,31 +87,24 @@
 }
 
 .item1 {
-  /* grid-area: top; */
   background-image: url('../img/Products/CC1.jpeg');
 }
 .item2 {
-  /* grid-area: top; */
   background-image: url('../img/Products/CC2.jpg');
 }
 .item3 {
-  /* grid-area: top; */
   background-image: url('../img/Products/CC3.jpg');
 }
 .item4 {
-  /* grid-area: top; */
   background-image: url('../img/Products/CC4.jpg');
 }
 .item5 {
-  /* grid-area: top; */
   background-image: url('../img/Products/CC5.jpg');
 }
 .item6 {
-  /* grid-area: top; */
   background-image: url('../img/Products/CC6.jpg');
 }
 .item7 {
-  /* grid-area: top; */
   background-image: url('../img/Products/CC7.jpg');
 }
 .item8 {
@@ -120,43 +113,35 @@
 }
 
 .item9 {
-  /* grid-area: bot; */
   background-image: url('../img/Products/cake1.jpg');
 }
 
 .item10 {
-  /* grid-area: bot; */
   background-image: url('../img/Products/cake2.jpg');
 }
 
 .item11 {
-  /* grid-area: bot; */
   background-image: url('../img/Products/cake3.jpg');
 }
 
 .item12 {
-  /* grid-area: bot; */
   background-image: url('../img/Products/cake4.jpg');
 }
 
 .item13 {
-  /* grid-area: bot; */
   background-image: url('../img/Products/cake5.jpg');
 }
 
 .item14 {
-  /* grid-area: bot; */
   background-image: url('../img/Products/cake6.jpg');
 }
 
 .item15 {
-  /* grid-area: bot; */
   background-image: url('../img/Products/cake7.jpg');
   margin-bottom: 40px;
 }
 
 .item16 {
-  /* grid-area: bot; */
   background-image: url('../img/Products/cake8.jpg');
   margin-bottom: 20px;
 }
@@ -164,6 +149,7 @@
 /*  */
 /* Item Square Shadows */
 /*  */
+
 .item-all {
   position: relative;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -241,6 +227,10 @@
   -ms-transform: rotate(3deg);
   transform: rotate(3deg);
 }
+
+/*  */
+/* Screen Size Adaption */
+/*  */
 
 @media screen and (min-width: 1700px) {
   .item-all {

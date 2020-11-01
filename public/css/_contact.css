@@ -59,37 +59,9 @@
   color: var(--powder-blue);
 }
 
-@media screen and (max-width: 1000px) {
-  .contact-body {
-    background-image: url('../img/backgrounds/Cupcake5.jpg');
-    grid-template-columns: 96%;
-    grid-template-areas: 'one';
-  }
-
-  .contact-page-card {
-    font-size: 20pt;
-  }
-
-  .contact-page-body {
-    margin-top: 10vh;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .contact-page-body {
-    margin-top: 5vh;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .contact-page-card {
-    font-size: 16pt;
-  }
-}
-
-/*==================================================
- * Shadows!
- * ===============================================*/
+/*  */
+/* Shadows */
+/*  */
 .contact-body {
   position: relative;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -119,4 +91,36 @@
   -ms-transform: skew(8deg) rotate(3deg);
   -o-transform: skew(8deg) rotate(3deg);
   transform: skew(8deg) rotate(3deg);
+}
+
+/*  */
+/* Screen Size Adaption */
+/*  */
+
+@media screen and (max-width: 1000px) {
+  .contact-body {
+    background-image: url('../img/backgrounds/Cupcake5.jpg');
+    grid-template-columns: 96%;
+    grid-template-areas: 'one';
+  }
+
+  .contact-page-card {
+    font-size: 20pt;
+  }
+
+  .contact-page-body {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact-page-body {
+    margin-top: 5vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact-page-card {
+    font-size: 16pt;
+  }
 }

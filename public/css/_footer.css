@@ -36,6 +36,10 @@
   text-align: center;
 }
 
+/*  */
+/* Shadows */
+/*  */
+
 .footer-shadow {
   position: relative;
   border-radius: 20px 20px 0 0;
@@ -44,6 +48,7 @@
   -ms-border-radius: 20px 20px 0 0;
   -o-border-radius: 20px 20px 0 0;
 }
+
 .footer-shadow::before,
 .footer-shadow::after {
   z-index: -1;
@@ -64,6 +69,7 @@
   -ms-transform: rotate(3deg);
   transform: rotate(3deg);
 }
+
 .footer-shadow:after {
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);

@@ -15,7 +15,6 @@ img {
 
 .nav-bar {
   padding-top: 90px;
-  /* padding-bottom: 30px; */
   background-color: var(--powder-blue);
   box-shadow: 0 8px 6px -9px rgb(84, 84, 84);
   font-family: 'Poiret One', cursive;
@@ -58,6 +57,15 @@ img {
   border-bottom: 2px solid white;
 }
 
+/* Hide Icons on larger screens */
+.nav-bar .fas {
+  display: none;
+}
+
+/*  */
+/* Shadows */
+/*  */
+
 .nav-shadow {
   position: relative;
 }
@@ -91,9 +99,9 @@ img {
   left: auto;
 }
 
-.nav-bar .fas {
-  display: none;
-}
+/*  */
+/* Link Handling */
+/*  */
 
 /* unvisited link */
 a:link {
@@ -118,6 +126,10 @@ a:active {
   text-decoration: none;
   color: white;
 }
+
+/*  */
+/* Screen Size Adaption */
+/*  */
 
 @media screen and (max-width: 1000px) {
   .link-wrap1 {

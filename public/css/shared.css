@@ -16,7 +16,6 @@ body {
 }
 
 .grid {
-  /* position: absolute; */
   height: 100%;
   overflow: auto;
   display: grid;
