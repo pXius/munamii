@@ -10,7 +10,7 @@ I know, I'm not exactly Picasso, that's why I don't get to choose the paint colo
 Hosted on Heroku. Server spins down after 30 minutes of non use.  
 First connect might take some time.
 
-**[LINK](https://vast-shelf-87690.herokuapp.com/)**
+**[LINK](https://munamii.herokuapp.com/)**
 
 ## Stack
 
