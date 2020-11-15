@@ -1,5 +1,4 @@
-# Munamii Cakery Proof of Concept Website
-
+# Munamii Cakery
 Just a little mostly-static website where the goal was not to have a full on e-commerce store, but to establish an online presence that might eventually lead to something more.
 
 The responsive design covers all common resolutions on mobile and desktop.
