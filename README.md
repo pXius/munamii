@@ -1,19 +1,25 @@
 # Munamii Cakery Proof of Concept Website
 
-This project serves as a POC and was a learning project with the  
-goal of improving CSS skills.
+Just a little mostly-static website where the goal was not to have a full on e-commerce store, but to establish an online presence that might eventually lead to something more.
 
-I know, I'm not exactly Picasso, that's why I don't get to choose the paint colour at home.
+The responsive design covers all common resolutions on mobile and desktop.
 
 ## Hosting
 
 Hosted on Heroku. Server spins down after 30 minutes of non use.  
-First connect might take some time.
+First connect might take a few seconds.
 
 **[LINK](https://munamii.herokuapp.com/)**
 
 ## Stack
 
-JS  
-EJS  
-HTML/CSS
+[Express](https://expressjs.com/)  
+[EJS](https://ejs.co/)
+
+## Desktop
+
+![](https://i.imgur.com/rFPFhgk.png)
+
+## Mobile
+
+![](https://i.imgur.com/WL8QlDR.png)
