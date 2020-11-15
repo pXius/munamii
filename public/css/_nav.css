@@ -31,19 +31,15 @@ img {
   -o-border-radius: 0px 0px 20px 20px;
 }
 .link-wrap1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
   width: 50%;
 }
 
 .link-wrap2 {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
   width: 50%;
 }
@@ -52,9 +48,9 @@ img {
   flex-shrink: 0;
   height: 55px;
   margin-bottom: 16px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-bottom: 2px solid white;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  /* border-bottom: 2px solid white; */
 }
 
 /* Hide Icons on larger screens */
@@ -131,16 +127,23 @@ a:active {
 /* Screen Size Adaption */
 /*  */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .link-wrap1 {
-    justify-content: center;
-    width: 50%;
+    grid-template-columns: 1fr;
     padding-bottom: 50px;
   }
   .link-wrap2 {
-    justify-content: center;
-    width: 50%;
+    grid-template-columns: 1fr;
     padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .link-wrap1 {
+    width: 50%;
+  }
+  .link-wrap2 {
+    width: 50%;
   }
   .nav-bar {
     padding-bottom: 6%;

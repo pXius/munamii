@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 port = process.env.PORT || 80;
-app.listen(port);
+app.listen(3000);
 
 app.get('/', (request, response) => {
   response.render('index', { title: 'Home' });
